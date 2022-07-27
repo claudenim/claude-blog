@@ -1,104 +1,268 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>MY BLOG</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".outer-menu-item").hover(
-          function () {
-            $(this).find(".inner-menu").show();
-          },
-          function () {
-            $(this).find(".inner-menu").hide();
-          }
-        );
-      });
-    </script>
-  </head>
-  <body>
-    <div id="page-wrapper">
-      <header id="main-header">
-        <hgroup>
-          <h1 class="master-title"> BLOG</h1>
-          <h2 class="master-description">SW A&D</h2>
-        </hgroup>
-        <nav id="main-navigation">
-          <div class="pull-left">
-            <ul class="outer-menu">
-              <li class="outer-menu-item">
-                <span class="menu-title">소개</span>
-                <ul class="inner-menu">
-                  <li class="inner-menu-item"><a href="index.html">몽쉘</a></li>
-                  <li class="inner-menu-item">
-                    <a href="oott.html">프로필</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="outer-menu-item">
-                <span class="menu-title">Interest</span>
-              </li>
-              <li class="outer-menu-item">
-                <span class="menu-title">Best</span>
-              </li>
-              <li>
-                <span class="menu-title"></span>
-              </li>
-            </ul>
-          </div>
-          <div class="pull-right">
-            <div class="search-bar">
-              <form>
-                <input type="text" class="input-search" />
-                <input
-                  type="submit"
-                  class="input-search-submit"
-                  value="Search"
-                />
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div id="content">
-        <section id="main-section">
-          <article>
-            <div class="article-header">
-              <h1 class="article-title">저는 민성윤입니다.</h1>
-            </div>
-            <div class="article-body">
-              <img src="http://image.auction.co.kr/itemimage/23/f5/b0/23f5b06666.jpg" />
-              <p>안녕하세요, 저는 국민대학교에 재학중인 김준영입니다.</p>
-              <p>저는 소프트웨어학부입니다.</p>
-              <p>족발먹고싶다.</p> 
-              <p></p>
-            </div>
-          </article>
-        </section>
-        <aside id="main-aside">
-          <div class="aside-list">
-            <h3>아이스크림</h3>
-            <ul>
-              <li><a href="#">데이터</a></li>
-              <li><a href="#">데이터</a></li>
-              <li><a href="#">데이터</a></li>
-            </ul>
-          </div>
-          <div class="aside-list">
-            <h3>최신글</h3>
-            <ul>
-              <li><a href="#">데이터</a></li>
-              <li><a href="#">데이터</a></li>
-              <li><a href="#">데이터</a></li>
-            </ul>
-          </div>
-        </aside>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude's page</title>
+  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="content-wrapper">
+  <header class="header header--bg">
+    <div class="container"> 
+      <nav class="navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#">CLAUDE</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">MY HOBBY</a></li> 
+            <li><a href="#">MY Playlist</a></li> 
+            <li><a href="#">CONTACT</a></li> 
+          </ul>
+        </div>
+      </nav>
+      <div class="header__content text-center">
+        <span class="header__content__block">HELLO</span>
+        <h1 class="header__content__title">I'M MinSeongYoon</h1>
+        <ul class="header__content__sub-title">
+          <li>YongMoon <span class="padding">&#45;</span></li>
+          <li>High School <span class="padding">&#45;</span></li>
+          <li>1st grade</li>
+        </ul>
+        <a class="header__button" href="#">HAVE QUESTIONS? LET'S TALK</a>
       </div>
-      <footer id="main-footer">
-        <a href="https://github.com/woonsango">Created By 민성윤 </a>
-      </footer>
+      <div class="social-icon pull-right">
+        <ul>
+          <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-instergram.logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+        </ul>
+      </div>  
     </div>
-  </body>
-</html>
+  </header>
+
+  <section class="about">
+    <div class="container about__container--narrow">
+      <div class="page-section">
+        <h2 class="page-section__title">ABOUT ME</h2>
+          <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+          <p class="page-section__paragraph"> </p>
+          <div class="row gutters-80">
+            <div class="col-md-4">
+              <div class="about__image">
+                <img src="assets/images/4.jpg" width="200px" style="margin-left:150px" alt="">
+              </div>
+            </div>
+            <div class="col-md-8 about__content">
+              <p class="about__description">안녕하세요 제 이름은 민성윤 이고요, 용문고등학교 학생입니다. 나이는 17살 1학년 이고, MBTI는 ISFJ입니다. 그리고 전화번호는 010-4377-2327 서울특별시에 살고 있습니다</p>
+              <div class="row row--margin-top">
+                <div class="col-md-4">
+                  <p class="about__bio"><strong>NAME :</strong> Min SeongYoon</p>
+                  <p class="about__bio"><strong>AGE :</strong> 17</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="about__bio"><strong>JOB TITLE :</strong> Student  </p>
+                  <p class="about__bio"><strong>LOCATION :</strong> Seoul,South Korea</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="button button--colorful button--margin" href="https://www.instagram.com/" > INSTAGRAM ID: mint_pogo</p>
+                </div>
+                <div class="col-md-4">
+                  <a class="button button--colorful button--margin" href="https://namu.wiki/w/ISFJ ">MBTI: ISFJ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skill skill--bg">
+    <div class="container skill__container--narrow">
+      <div class="page-section">
+        <h2 class="page-section__title page-section__title--white">MY HOBBY</h2>
+        <img class="page-section__title-style" src="assets/images/title-style-white.png" alt="">
+        <p class="page-section__paragraph page-section__paragraph--white"> </p>
+        <div class="row gutters-60">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/2.png" style="width:300px"  alt="">
+              <h4 class="skill__single-part__title">Game(FIFA 22)</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/1.png" style="width:250px" alt="">
+              <h4 class="skill__single-part__title">Basketball</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #FFAC1B;;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/3.png" alt="">
+              <h4 class="skill__single-part__title">Guitar</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #C99AFF;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">MY Playlist</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph"> </p>
+        <div class="row gutters-70">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/logo-design.png" alt="">
+              <h4 class="service__single-section__title">SINGER</h4>
+              <p class="service__single-section__paragraph"></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/website-design.png" alt="">
+              <h4 class="service__single-section__title"></h4>
+              <p class="service__single-section__paragraph"></p>
+            </div>
+          </div>  
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/support.png" alt="">
+              <h4 class="service__single-section__title">SONG</h4>
+              <p class="service__single-section__paragraph"> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  
+
+  <section class="slider slider--bg">
+    <div id="myCarousel" class="carousel container slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carousel-content">
+            <div class="">
+              <div class="text-center">
+                <img src="assets/images/.jpg" alt="">
+                <h4>SeongYoon Min</h4>
+                <h></h>
+                <p> </p>
+                <div class="rating">
+                  <ul>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+        
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="brand-logo brand-logo--bg">
+    <div class="container">
+      <div class="row">
+        <div class="brand-logo__wrapper">
+          <li><img class="img-responsive" src="assets/images/brand-1.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-2.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-3.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-4.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-1.png" alt=""></li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <footer class="footer footer--bg">
+    <div class="container text-center">
+      <h1 class="footer__title">CLAUDE</h1>
+      <ul class="footer__contact-information">
+        <li><a href="tel:5555555555"><i class="material-icons">phone</i> 010-4377-2327</a></li>
+        <li><a href="claude0619@naver.com"><i class="material-icons">email</i> claude0619@naver.com</a></li>
+        <li><a href="#"><i class="material-icons">location_on</i>Address: 장월로 31</a></li>
+      </ul>
+    </div>
+    <hr style="border: 0;border-top: 1px solid #525B60;display:block;margin-top: 40px;">
+    <div class="container text-center">
+      <div class="social-icon">
+        <ul>
+          <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__paragraph">Copyright &copy; 2017 DartThemes , All Rights Reserved.</p>
+    </div>
+  </footer>
+</div>
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/mixitup.js"></script>
+
+  <script>
+    $('a').click(function(e)
+      {
+        e.preventDefault();
+      });
+
+    // calling mixitup
+    var mixer = mixitup(".portfolio");
+  </script>
+</body>
+</html>  
